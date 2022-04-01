@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first music website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="hero">
+ <div class="navbar">
+     <p>Boom it</p>
+     <ul>
+         <li><a class="active" href="index.html">HOME</a></li>
+         <li><a class="active" href="music.html">MUSIC</a></li>
+         <li><a  class="active" href="billboards.html">BILLBOARD</a></li>
+         
+     </ul>
+ </div>
+</div>
+     
+     <div class="content">
+         <div class="left">
+             <h1>Insane <br> Than <br>Ever</h1>
+            </div>
+
+             <div class="right">
+                 <p>Click to Play</p>
+                 <img src="images/sound.png" id="icon">
+</div>       
+</div>
+</div>
+
+<audio>
+    <audio id="my song">
+    <source src="images/DJRock.mp3" >
+
+</audio>
+<script>
+    var mysong=document.getElementById("my song")
+    var icon=document.getElementById("icon")
+
+    icon.onclick= function(){
+        if(mysong.paused){
+        mysong.play();
+        icon.scr="images/pause.png";
+    }
+    else{
+        mysong.pause();
+        icon.scr="images/sound.png"
+
+    }
+}
+
+
+
+
+
+    
+    
+  
+</script>
+    
+</body>
+</html>
